@@ -265,7 +265,7 @@ function initPano() {
     marker.setMap( gmap );
 
     if (window.history) {
-      var newUrl = '/?lat='+this.location.latLng.lat()+'&lng='+this.location.latLng.lng();
+      var newUrl = '/oculusstreetview/?lat='+this.location.latLng.lat()+'&lng='+this.location.latLng.lng();
       newUrl += USE_TRACKER ? '&sock='+escape(WEBSOCKET_ADDR.slice(5)) : '';
       newUrl += '&q='+QUALITY;
       newUrl += '&s='+$('#settings').is(':visible');
